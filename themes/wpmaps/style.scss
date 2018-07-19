@@ -1,0 +1,156 @@
+/*
+Theme Name: WP Maps
+Theme URI: http://wp-maps.dev
+Author: Vinícius Pereira
+Author URI: http:/viniciusofp.com.br
+Description: ...
+Version: 1.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wpmaps
+Tags: massa
+*/
+// @import url('https://fonts.googleapis.com/css?family=Roboto:400');
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+
+@keyframes slidedown {
+  0%   { height: 0; opacity: 0; }
+  80%   { opacity: 1; }
+  100% { height: 500px; }
+}
+@keyframes hero {
+  0%   { opacity: 0; }
+  100%   { opacity: 1; }
+}
+
+$body-copy: #687171;
+$black: #37393c;
+$green: #33d582;
+$primary: $green;
+
+
+@import 'scss/bootstrap/bootstrap';
+@import 'scss/fonts';
+@import 'scss/animate';
+@import 'scss/font-awesome';
+@import 'scss/rzslider';
+@import 'scss/search';
+
+html {
+  font-size: .9rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: .95rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+body {
+  color: $black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  transition: .2s;
+}
+a:hover, a:visited, a:focus {
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6, {
+  font-family: 'DarwinAlt', $font-family-sans-serif;
+}
+h1,h2,h3,
+.h1,.h2,.h3 {
+  font-weight: 700;
+}
+.animate {
+  opacity: 0;
+}
+.btn {
+  border-width: 2px;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-size: .7rem;
+  letter-spacing: 1.5px;
+  padding: 8px 15px;
+}
+.btn-primary {
+  color: white;
+  background: $primary;
+}
+.btn-outline-primary:hover {
+    color: $white;
+    background-color: #33d582;
+    border-color: #33d582;
+}
+.card {
+  border: none;
+}
+
+
+.page p,
+.single p {
+  color: $body-copy;
+  max-width: 650px;
+}
+.wrapper {
+  width: 100%;
+}
+
+
+@import 'scss/navbar';
+@import 'scss/single';
+@import 'scss/archives';
+@import 'scss/descubra';
+@import 'scss/espetaculo-passarela';
+@import 'scss/footer';
+
+//////
+
+.select-div {
+  position: relative;
+  .select-caret {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    z-index: 9;
+    color: $gray-900;
+  }
+  select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+  }
+}
+.landing {
+  background-color: $black;
+  background-image: url('img/home.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  color: $white;
+  min-height: 100vh;
+  .row {
+    height: 100vh;
+    max-height: 800px;
+  }
+  li {
+    display: inline-block;
+    padding: 10px;
+  }
+}

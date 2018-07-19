@@ -1,0 +1,423 @@
+
+.sitio-header {
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-color: $black;
+  -webkit-animation: slidedown 1s ease; /* Safari 4+ */
+  -moz-animation:    slidedown 1s ease; /* Fx 5+ */
+  -o-animation:      slidedown 1s ease; /* Opera 12+ */
+  animation:         slidedown 1s ease; /* IE 10+, Fx 29+ */
+  .row {
+  	height: 100%;
+  }
+  iframe {
+  	width: 100%;
+  	height: 546px;
+  	margin-top: -46px;
+  }
+}
+.sitio-header .align-items-center {
+	height: 100%;
+	color: $white;
+}
+.sitio-menu-container {
+	top: 0;
+	@media all and (max-width: 991px) {
+		padding-right: 0;
+    max-width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+		.col-lg-8 {
+			padding-right: 0;
+			padding-left: 10px;
+			margin-left: 5px;
+		}
+	}
+}
+
+.sitio-menu {
+	margin: 0 !important;
+	background: $white;
+	& > div {
+		padding: 6px 3px 4px;
+		border-bottom: 2px solid rgba(0,0,0,.1);
+  	font-family: 'DarwinAlt', $font-family-sans-serif;
+  	text-transform: uppercase;
+  	transition: .2s;
+  	&:hover {
+  		background: $primary;
+  		a {
+  			color: $white;
+  		}
+  	}
+  	&.active {
+  		background: $gray-100;
+  		a {
+  			color: $primary;
+  			font-weight: bolder;
+  		}
+  		&:hover {
+	  		background: $primary;
+	  		a {
+	  			color: $white;
+	  		}
+	  	}
+  	}
+  	a {
+  		color: $gray-600;
+  		font-size: .6rem;
+  		letter-spacing: 1px;
+  		width: 100%;
+	    height: 100%;
+	    display: inline-block;
+	    padding: 5px 0;
+  	}
+  	
+	}
+}
+
+.sitio-content {
+  @media all and (max-width: 767px) {
+  	order: 2;
+  	padding-top: 0;
+  }
+	padding-top: 30px;
+	padding-bottom: 90px;
+	.section {
+		margin-top: 15px;
+		padding-top: 50px;
+		@media all and (max-width: 767px) {
+			padding-top: 0px;
+		}
+	}
+	h1 {
+		margin-top: -10px;
+	}
+	h2 {
+		font-size: 2rem;
+		margin-bottom: 10px;
+	}
+	h3 {
+		font-weight: 800;
+		font-size: 1.3rem;
+	}
+	p {
+		color: $body-copy;
+	}
+	p, small, blockquote, h1, h2, h3, h4, h5, h6 {
+		max-width: 600px;
+	}
+	.bigtext {
+	  display: block;
+	  overflow: hidden;
+	}
+	 
+	.expand, .contract {
+	  cursor: pointer;
+    color: #23b465 !important;
+    text-transform: uppercase;
+    text-decoration: underline !important;
+    font-family: "DarwinAlt", $font-family-sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+    display: block;
+	}
+	.expand:hover, .contract:hover {
+	  color: $black!important;
+	}
+	 
+	.hide {
+	  display: none;
+	}
+	.media {
+		height: 150px;
+		border: 1px solid $gray-200;
+		margin-bottom: 30px;
+		h6	{
+			margin-bottom: 0;
+	    font-family: 'DarwinAlt', sans-serif;
+	    font-size: 14px;
+			color: $body-copy;
+		}
+		.media-tag {
+			height: 148px;
+	    background: $primary;
+	    color: white;
+	    padding: 60px 10px;
+	    font-weight: 700;
+
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	
+}
+
+.bens-visitados {
+	background: #fff;
+	img {
+  	max-height: 100%;
+  }
+}
+
+.sitio-sidebar {
+  @media all and (max-width: 767px) {
+  	order: 1;
+  	margin-top: 45px;
+  }
+	font-size: 15px;
+	border-radius: 3px;
+	> .wrapper{
+		background: $white;
+		margin-bottom: 45px;
+		border-radius: 3px;
+		box-shadow: 0px 2px 7px rgba(0,0,0,.25);
+	}
+	&.roteiro-sidebar {
+		margin-top: 90px!important;
+		@media all and (min-width: 768px) and (max-width: 991px) {
+			margin-top: 50px!important;
+		}
+	}
+	@media all and (min-width: 992px) {
+		margin-top: -89px;
+	}
+	@media all and (min-width: 768px) and (max-width: 991px) {
+		margin-top: 50px;
+	}
+	.meta {
+		padding: 24px 30px 15px 30px;
+	}
+	.media {
+		color: #919a9b; 
+		img {
+			width: 80px;
+			height: auto;
+		}
+		p {
+			margin-bottom: 0px;
+		}
+	}
+	.meta.roteiros-list {
+		padding: 0;
+		li {
+			padding: 10px;
+			border-bottom: 1px solid $gray-300;
+			a {
+				font-weight: bolder;
+				font-family: 'DarwinAlt', $font-family-sans-serif;
+				font-size: .9rem;
+			}
+		}
+	}
+	.imprima-ficha {
+		margin: 20px auto 10px;
+		display: block;
+	}
+}
+.sitio-sidebar-tag {
+	background: $gray-900;
+  padding: 18px 30px 13px;
+  color: white;
+  text-transform: uppercase;
+  min-height: 48px;
+  h5 {
+  	font-size: .8rem;
+  	font-weight: 300;
+  	letter-spacing: 1px;
+  	margin-bottom: 0;
+  }
+	&.cultural {
+		background: #c58a4f;
+	}
+	&.natural {
+		background: #92d14f;
+	}
+	&.misto {
+		background: #e36c07;
+	}
+}
+
+.sitio-sidebar h6 {
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.sitio-sidebar svg {
+	color: $black;
+	margin: 0px 10px -20px;
+}
+
+
+.info-tombo {
+  font-family: 'DarwinAlt';
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#acesso {
+	margin-top: 15px;
+  padding-top: 50px;
+	max-width: 100%;
+}
+
+$route-map-height: 450px;
+
+#searchRoute {
+	border-radius: 0;
+  line-height: 1.5;
+  height: calc(2.25rem + 2px);
+  margin: 0 auto;
+  @media all and (max-width: 767px) {
+  	margin: 15px auto 0;
+  }
+}
+
+#route-map {
+	width: 60%;
+	height: $route-map-height;
+  @media all and (max-width: 767px) {
+	  width: 100%;
+	  max-height: 400px;
+    float: none;
+    display: block;
+	}
+}
+
+#right-panel {
+	  width: 40%;
+    max-height: $route-map-height;
+    overflow: scroll;
+    float: left;
+    font-size: 13px;
+    background: #fff;
+    border: 1px solid $gray-300;
+    border-right: none;
+  	@media all and (max-width: 767px) {
+		  width: 100%;
+		  max-height: 300px;
+    	float: none;
+    	display: block;
+		}
+    .adp-placemark {
+    	margin-top: 0;
+    	border-left: none;
+    	border-right: none;
+    	border-top: none;
+    	background: $primary;
+	    color: white;
+	    border: 1px solid $primary;
+    	td {
+    		padding: 10px;
+    		font-weight: bold;
+    	}
+    }
+    .adp-directions {
+    	margin-left: 5px;
+    }
+}
+
+#route-container {
+	max-width: 100%;
+	height: 0;
+	margin-top: 15px;
+	overflow: hidden;
+	opacity: 0;
+	transition: 1s;
+	&.visivel {
+		opacity: 1;
+		height: $route-map-height;
+ 		@media all and (max-width: 767px) {
+		  min-height: 700px;
+		}
+	}
+}
+
+@media print {
+	body {
+		color: black !important;
+	}
+	.sitio-header{
+		height: auto !important;
+		background: white !important;
+		.align-items-center {
+			color: black !important;
+		}
+	}
+
+	.sitio-menu {
+		display: none !important;
+	}
+
+	.sitio-content {
+		order: 2;
+    flex: 0 0 100%;
+    max-width: 100%;
+    p, h1, h2, h3, h4, h5, h6 {
+    	max-width: 100%;
+    }
+	}
+
+	.sitio-sidebar {
+		order: 1;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 0;
+    img {
+    	display: none;
+    }
+	}
+
+	button {
+		display: none !important;
+	}
+
+	#acesso {
+		display: none !important;
+	}
+
+	.roteiros-list,
+	.share {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+
+	.wrapper {
+		margin-bottom: 0!important;
+	}
+
+	.sitio-content .section {
+    margin-top: 15px;
+    padding-top: 0px;
+	}
+	.bigtext {
+		height: auto!important;
+	}
+	.expand, .contract {
+		display: none;
+	}
+
+	.sitio-sidebar .meta {
+    padding: 30px 0px 0px;
+	}
+}
+
+.institucional {
+	h5 {
+		text-transform: uppercase;
+		color: $primary;
+		font-size: 1rem;
+		margin-top: 45px;
+		margin-bottom: 15px;
+	}
+	strong {
+		color: black;
+		margin-bottom: 10px;
+		font-size: .8rem;
+	}
+}

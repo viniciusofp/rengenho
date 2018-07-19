@@ -1,0 +1,83 @@
+.archive-roteiro {
+  padding-top: 30px;
+  padding-bottom: 90px;
+  .box {
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+    .shadow {
+      color: $white;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.5);
+      transition: .5s ease;
+      &:hover {
+        background: rgba(0,0,0,.7);
+      }
+    }
+    .meta {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding: 15px;
+      .title {
+        color: $white;
+        font-size: 1.5rem;
+      }
+      .cidade {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 0 5px 5px 0;
+        background: transparentize(black, .5);
+        color: white;
+      }
+      .deslocamento {
+        display: block;
+        position: absolute;
+        top: -15px;
+        left: 15px;
+        min-width: 200px;
+        color: $green;
+        font-size: .9rem;
+      }
+    }
+  }
+  .col-lg-4 .box {
+    height: 420px;
+  }
+  .roteiro-menu {
+    margin-bottom: 30px;
+    label {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  .select-div {
+    position: relative;
+    .select-caret {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: -1;
+    }
+  }
+  select {
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid $gray-200;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background-color: transparent!important;
+    &:focus {
+      color: #495057;
+      background-color: transparent;
+      border-color: $primary;
+      box-shadow: none;
+      outline: 0;
+    }
+  }
+}

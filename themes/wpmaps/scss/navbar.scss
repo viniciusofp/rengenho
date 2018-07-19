@@ -1,0 +1,88 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding-top: 20px;
+  padding-bottom: 20px;
+	// background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	// background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	// background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  @media all and (max-width: 991px) {
+    position: relative;
+    background: $gray-900;
+  }
+  @media all and (min-width: 991px) {
+  }
+}
+.navbar-dois {
+  position: relative;
+  background: $gray-900;
+  padding-bottom: 20px;
+}
+.navbar-dark .navbar-nav .nav-link {
+	text-align: center;
+  color: $white;
+  font-family: 'DarwinAlt', $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .6rem;
+  padding-right: .8rem;
+  padding-left: .8rem;
+  padding-bottom: .4rem;
+  margin-right: .8rem;
+  &:hover {
+  	color: lighten($primary, 15%);
+  }
+
+  @media all and (max-width: 991px) {
+    border-bottom: 1px solid black;
+    padding: 15px 0 10px 0;
+  }
+}
+.menu-item:first-child .nav-link {
+
+  @media all and (max-width: 991px) {
+    border-top: 1px solid black;
+  }
+}
+.navbar-brand {
+  img {
+    margin-right: 15px;
+    margin-left: 15px;
+	  @media all and (max-width: 567px) {
+	  	max-width: 100px;
+	  	height: auto;
+	  }
+	  @media all and (min-width: 568px) and (max-width: 1235px) {
+	  	max-width: 150px;
+	  	height: auto;
+	  }
+  }
+}
+
+// .menu-item:last-child {
+// 	.nav-link {
+// 		background: $primary;
+// 		border-radius: 1rem;
+// 	}
+// }
+.collapse {
+	transition: .1s ease-in;
+}
+.collapse.show {
+    display: block;
+}
+.collapse.show,
+.collapsing {
+  padding-top: 10px;
+  margin-bottom: -20px;
+}
+.navbar-dark .navbar-toggler {
+	color: $white;
+	border: none;
+}
+
+

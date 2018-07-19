@@ -1,0 +1,258 @@
+.hero .container,
+#map {
+  height: 750px;
+  max-height: 100vh;
+  min-height: 300px;
+}
+
+.hero{
+  position: relative;
+  background-image: url('img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  -webkit-animation: hero 1.5s ease; /* Safari 4+ */
+  -moz-animation:    hero 1.5s ease; /* Fx 5+ */
+  -o-animation:      hero 1.5s ease; /* Opera 12+ */
+  animation:         hero 1.5s ease; /* IE 10+, Fx 29+ */
+  h1, .big-header {
+    font-size: 3.5rem;
+    @media all and (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+  .lead {
+
+  }
+  .col-6 {
+    position: relative;
+  }
+  // .col-6::after {
+  //   color: $gray-600;
+  //   content: "\f0d7"; // font awesome caret-down
+  //   font-family: "Font Awesome 5 Free";
+  //   font-style: normal;
+  //   font-variant-caps: normal;
+  //   font-variant-ligatures: normal;
+  //   font-weight: 900;
+  //   height: 16px;
+  //   line-height: 16px;
+  //   font-size: 15px;
+  //   text-rendering: auto;
+  //   width: 16px;
+  //   -webkit-font-smoothing: antialiased;
+  //   position: absolute;
+  //   right: 10px;
+  //   top: 12px;
+  //   z-index: 9;
+  // }
+  .form-control {
+    color: $gray-600;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    -webkit-appearance: none;
+    margin-bottom: .5rem;
+    font-size: 15px;
+    height: calc(2.25rem + 2px);
+  }
+  .btn {
+    color: $white;
+    font-size: 17px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 12px;
+    @media all and (min-width: 992px) {
+      font-size: 20px;
+    }
+  }
+}
+
+
+.roteiros, .sobre {
+  background: #efefef;
+  h2 {
+    font-family: 'DarwinAlt', $font-family-sans-serif;
+    font-weight: 700;
+    margin-top: 90px;
+    font-size: 2.5rem;
+  }
+  .lead {
+    margin: 0 auto;
+    max-width: 600px;
+    color: $body-copy;
+    font-size: 1.2rem;
+  }
+  .card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: .3rem;
+    overflow: hidden;
+    box-shadow: 0px 3px 15px rgba(0,0,0,.1);
+    transform: .5s ease;
+    min-height: 300px;
+    background: $gray-100;
+    &:hover {
+      box-shadow: 0px 3px 15px rgba(0,0,0,.2);
+    background: $white;
+    }
+    h3 {
+      font-weight: 700;
+      color: $black;
+      text-transform: uppercase;
+      font-size: .8rem;
+      line-height: 1rem;
+      margin-bottom: 15px;
+    }
+    p {
+      font-family: 'DarwinAlt', $font-family-sans-serif;
+      color: $body-copy;
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 0;
+    }
+  }
+  .card-body {
+    // height: 120px;
+  }
+  button {
+    margin-top: 30px;
+    margin-bottom: 90px;
+  }
+}
+
+.stats {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  h1 {
+    font-size: 3.5rem;
+    color: $primary;
+    margin-bottom: -10px;
+  }
+  p {
+    padding-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: $body-copy;
+    font-size: .8rem;
+  }
+}
+#homecarousel {
+  .carousel-control-prev, .carousel-control-next {
+    height: 150px;
+    top: 300px;
+    width: 8%;
+  }
+
+}
+
+.navegue {
+  position: absolute;
+  margin-top: 100px;
+  @media all and (max-width: 767px) {
+    margin-top: 80px;
+  }
+  .map-icon {
+    img {
+    }
+  }
+  h6{
+    font-size: .8rem;
+    letter-spacing: 1.5px;
+    color: $white;
+    margin-bottom: 10px;
+  }
+}
+
+.filtre {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  z-index: 9;
+  @media all and (max-width: 767px) {
+    left: 30px;
+    bottom: 30px;
+  }
+  h6{
+    font-size: .8rem;
+    letter-spacing: 1.5px;
+    color: $white;
+    margin-bottom: 10px;
+  }
+}
+
+.map-wrapper {
+  background: $gray-900;
+}
+
+
+.infowindow {
+  // width: 200px;
+  text-align: center;
+  img {
+    max-width: 100% !important;
+  }
+  h3 {
+    color: $black;
+    font-size: .8rem;
+    font-weight: 300;
+  }
+  p {
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+}
+
+.mapa {
+  position: relative;
+}
+.mapa-pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  pointer-events: none;
+}
+
+.closebtn {
+  background: $primary!important;
+  width: 27px!important;
+  height: 27px!important;
+  border-radius: .3rem;
+  opacity: 1!important;
+  &::after {
+    color: $white;
+    content: "\0d7"; // font awesome caret-down
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-weight: 900;
+    height: 16px;
+    line-height: 16px;
+    font-size: 21px;
+    text-rendering: auto;
+    width: 16px;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    z-index: 9;
+
+  }
+  img {
+    display: none;
+  }
+}
+
+
+.gm-style-iw {
+   width: 200px !important;
+   top: 14px !important;
+   left: 27px !important;
+   background-color: #fff;
+   // box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+   border-radius: 2px 2px 0 0;
+}

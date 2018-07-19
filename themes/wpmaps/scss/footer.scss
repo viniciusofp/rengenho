@@ -1,0 +1,40 @@
+footer {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background: #181818;
+  color: $white;
+  background-image: url('img/footer.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  ul {
+    padding-left: 0;
+    margin-left: 0;
+    li {
+      list-style: none;
+      padding-left: 0;
+      margin-left: 0;
+      .nav-link {
+        padding: 3px 0;
+        color: $gray-500;
+        font-size: .9rem;
+        transition: .2s;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.footer-logos {
+  padding: 10px 0;
+}
+.footer-header {
+  color: $primary;
+  font-size: .8rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-family: 'DarwinAlt', $font-family-sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
